@@ -35,6 +35,11 @@
                      #rst  { display: none; } 
                      #ptr { display: none; }
                     }
+                @media screen and (max-width: 365px) {
+                    #table-responsive {
+                    width: 100%;
+                    }
+                }
             </style>
             <!-------------------------------------------- VALIDATION SCRIPT 
                                                    CHECKS INPUTFIELDS WITH VAILD NUMBERS --------------------------------->
@@ -111,7 +116,7 @@
                     </div>
                     <!---------------------------------- AUTOMARKS DIV CONTAINER ------------------------------>
                     <div class="container">
-                        <table class="table table-bordered table-secondary">
+                        <table class="table table-bordered table-secondary" id="table-responsive">
                             <thead></thead>
                             <tbody>
                                 <tr>
