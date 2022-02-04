@@ -35,11 +35,6 @@
                      #rst  { display: none; } 
                      #ptr { display: none; }
                     }
-                @media screen and (max-width: 365px) {
-                    #table-responsive {
-                    width: 100%;
-                    }
-                }
             </style>
             <!-------------------------------------------- VALIDATION SCRIPT 
                                                    CHECKS INPUTFIELDS WITH VAILD NUMBERS --------------------------------->
@@ -116,29 +111,29 @@
                     </div>
                     <!---------------------------------- AUTOMARKS DIV CONTAINER ------------------------------>
                     <div class="container">
-                        <table class="table table-bordered table-secondary" id="table-responsive">
+                        <table class="table table-bordered table-secondary" >
                             <thead></thead>
                             <tbody>
                                 <tr>
                                     <th scope="row">SUBJECTS</th>
-                                    <th><input type="text" class="form-control" id="sub1" onkeyup="calculate(this.value)" disabled></th>
-                                    <th><input type="text" class="form-control" id="sub2" onkeyup="calculate(this.value)" disabled></th>
-                                    <th><input type="text" class="form-control" id="sub3" onkeyup="calculate(this.value)" disabled></th>
-                                    <th><input type="text" class="form-control" id="subtot" disabled></th>
+                                    <th><input type="text" class="form-control" id="sub1" onkeyup="calculate(this.value)" readonly></th>
+                                    <th><input type="text" class="form-control" id="sub2" onkeyup="calculate(this.value)" readonly></th>
+                                    <th><input type="text" class="form-control" id="sub3" onkeyup="calculate(this.value)" readonly></th>
+                                    <th><input type="text" class="form-control" id="subtot" readonly></th>
                                 </tr>
                                 <tr>
                                     <th scope="row">LANGUAGES</th>
-                                    <th><input type="text" class="form-control" id="lang1" onkeyup="calculate(this.value)" disabled></th>
-                                    <th><input type="text" class="form-control" id="lang2" onkeyup="calculate(this.value)" disabled></th>
-                                    <th><input type="text" class="form-control" id="lang3" onkeyup="calculate(this.value)" disabled></th>
-                                    <th><input type="text" class="form-control" id="langtot" disabled></th>
+                                    <th><input type="text" class="form-control" id="lang1" onkeyup="calculate(this.value)" readonly></th>
+                                    <th><input type="text" class="form-control" id="lang2" onkeyup="calculate(this.value)" readonly></th>
+                                    <th><input type="text" class="form-control" id="lang3" onkeyup="calculate(this.value)" readonly></th>
+                                    <th><input type="text" class="form-control" id="langtot" readonly></th>
                                 </tr>
                                 <tr>
                                     <th scope="row"> TERM TOTAL</th>
-                                    <th><input type="text" class="form-control" id="t1" onkeyup="calculate(this.value)" disabled></th>
-                                    <th><input type="text" class="form-control" id="t2" onkeyup="calculate(this.value)" disabled></th>
-                                    <th><input type="text" class="form-control" id="t3" onkeyup="calculate(this.value)" disabled></th>
-                                    <th><input type="text" class="form-control" id="t_tot" disabled></th>
+                                    <th><input type="text" class="form-control" id="t1" onkeyup="calculate(this.value)" readonly></th>
+                                    <th><input type="text" class="form-control" id="t2" onkeyup="calculate(this.value)" readonly></th>
+                                    <th><input type="text" class="form-control" id="t3" onkeyup="calculate(this.value)" readonly></th>
+                                    <th><input type="text" class="form-control" id="t_tot" readonly></th>
                                 </tr>
                             </tbody>
                         </table>
