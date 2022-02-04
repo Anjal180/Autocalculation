@@ -142,13 +142,16 @@
                 // function printpage(){
                 //     window.print();
                 // }
-                function printpage(pvalue){
-                    var backup=document.body.innerHTML;
-                    var divcontent=document.getElementById(pvalue).innerHTML;
-                    document.body.innerHTML=divcontent
+               function printpage() {
+                    const reset = document.getElementById('rst');
+                    const print = document.getElementById('ptr');
+                    reset.style.display = 'none';
+                    print.style.display = 'none';
                     window.print();
-                    document.body.innerHTML=backup;
+                    reset.style.display = 'block';
+                    print.style.display = 'block';
                 }
+                
             </script>
             <script src="racalc.js"></script>
 
